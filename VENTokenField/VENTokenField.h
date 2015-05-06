@@ -36,6 +36,7 @@
 - (NSString *)tokenField:(VENTokenField *)tokenField titleForTokenAtIndex:(NSUInteger)index;
 - (NSUInteger)numberOfTokensInTokenField:(VENTokenField *)tokenField;
 - (NSString *)tokenFieldCollapsedText:(VENTokenField *)tokenField;
+- (UIColor *)tokenField:(VENTokenField *)tokenField colorSchemeForTokenAtIndex:(NSUInteger)index;
 @end
 
 
@@ -63,6 +64,7 @@
 @property (assign, nonatomic) UIKeyboardType inputTextFieldKeyboardType;
 @property (assign, nonatomic) UITextAutocorrectionType autocorrectionType;
 @property (assign, nonatomic) UITextAutocapitalizationType autocapitalizationType;
+@property (assign, nonatomic) UIView *inputTextFieldAccessoryView;
 @property (strong, nonatomic) UIColor *toLabelTextColor;
 @property (strong, nonatomic) NSString *toLabelText;
 @property (strong, nonatomic) UIColor *inputTextFieldTextColor;
